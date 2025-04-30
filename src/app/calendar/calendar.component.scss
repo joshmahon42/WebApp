@@ -1,0 +1,141 @@
+:host {
+    display: block;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+    background-color: #e8ebf0;
+    min-height: 100vh;
+    color: #222;//default text color
+  }
+  
+  /* Heading */
+  h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #222; 
+  }
+  
+  /* Event Form */
+  .event-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+  
+    input,
+    select {
+      padding: 8px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background: white;
+      color: #222;//input text color
+    }
+  
+    button {
+      padding: 8px 16px;
+      font-size: 1rem;
+      background-color: #186bbe;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: #175ba8;
+      }
+  
+      &:disabled {
+        background-color: #aaa;
+        cursor: not-allowed;
+      }
+    }
+  }
+  
+  /* Calendar Container */
+  .calendar {
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+    max-width: 100%;
+    color: #222; 
+  }
+  
+  /* Calendar Grid Layout */
+  .grid {
+    display: grid;
+    grid-template-columns: 100px repeat(7, 1fr);//Time and 7 days
+    grid-auto-rows: 80px;
+    border: 1px solid #ccc;
+  }
+  
+  .header-cell,
+  .time-label,
+  .cell {
+    border: 1px solid #ddd;
+    padding: 8px;
+    box-sizing: border-box;
+    background-color: #fdfdfd;
+    color: #222;
+  }
+  
+  .header-cell {
+    background-color: #f1f1f1;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .header-cell.today {
+    background-color: #fffae6;//highlight for today
+    color: #222;
+  }
+  
+  .time-label {
+    background-color: #f0f0f0;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Each calendar cell */
+  .cell {
+    position: relative;
+    background-color: #fafafa;
+    overflow-y: auto;
+    color: #222;
+  }
+  
+  /* Event Badge */
+  .event {
+    background-color: #3c8d3f;
+    color: white;
+    padding: 6px 8px;
+    margin: 4px 0;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    word-wrap: break-word;
+  }
+  
+  /* Delete Button inside events */
+  .delete {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 8px;
+    line-height: 1;
+  }
+
+  .device-info {
+    background: #e3f2fd;
+    padding: 0.75rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+  }
+  

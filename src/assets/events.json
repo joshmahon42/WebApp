@@ -1,0 +1,7 @@
+[
+    { "title": "Lab1", "day": "Monday", "time": "10:00" },
+    { "title": "Lab2", "day": "Tuesday", "time": "11:00" },
+    { "title": "Lab3", "day": "Wednesday", "time": "13:00" },
+    { "title": "Lab4", "day": "Thursday", "time": "14:00" },
+    { "title": "Lab5", "day": "Friday", "time": "15:00" }
+  ]
